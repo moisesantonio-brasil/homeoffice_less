@@ -1,0 +1,417 @@
+@slc_section: section;
+@slc_h1: h1;
+@slc_h2: h2;
+@slc_div: div;
+@slc_p: p;
+
+@var_cor_padrao: rgb(182, 153, 115);
+@var_cor_titulo: rgb(156, 134, 107);
+
+@tamanho250px: 250px;
+@tamanho280px: 280px;
+@tamanho300px: 300px;
+@tamanho360px: 360px;
+@tamanho400px: 400px;
+@tamanho412px: 412px;
+@tamanho540px: 540px;
+@tamanho600px: 600px;
+@tamanho800px: 800px;
+@tamanho1000px: 1000px;
+@tamanho1400px: 1400px;
+@tamanho1600px: 1600px;
+
+@{slc_section}{
+    width: 500px;
+    height: 110px;
+    background-color: @var_cor_padrao;
+    padding: 5px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+@{slc_h1}{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@{slc_h2}{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
+text-shadow: 3px 3px 3px rgb(57, 56, 56);
+font-size: 30px;
+}
+
+@{slc_div}{
+    margin: auto;
+    width: 320px;
+    height: auto;
+   background-color: @var_cor_titulo;
+   text-align: center;
+   border-radius: 10px;
+   margin-top: 100px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./images/sala.jpg");
+}
+img{
+    .img_function();
+}
+
+.img_function(){
+    width: 800px;
+    height: 500px;
+    margin-left: 400px;
+    box-shadow: 5px 5px 2px 5px rgba(8, 8, 8, 0.221);
+}
+@{slc_p}{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: @var_cor_padrao;
+    margin-bottom: 80px;
+}
+
+.funcaonone(){
+    display: none;
+}
+
+@media screen and (max-width:200px) {
+ body{
+    .funcaonone()
+ }
+}
+@media screen and (min-width: @tamanho250px){
+@{slc_h1}{
+    font-size: 40px;
+    text-align: justify;
+}
+@{slc_section}{
+    width: 200px;
+    height: 50px;
+}
+@{slc_div}{
+    width: 190px;
+    height: auto;
+    margin-top: 25px;
+}
+@{slc_h2}{
+    font-size: 18px;
+}
+img{
+    width: 190px;
+    height: 150px;
+    margin-left: 10px;
+}
+@{slc_p}{
+    font-size: 16px;
+    height: auto;
+    width: 180px;
+}
+}
+
+@media screen and (min-width: @tamanho280px){
+   
+    img{
+        width: 220px;
+        height: 170px;
+        margin-left: 20px;
+    }
+   
+    }
+
+    @media screen and (min-width: @tamanho300px){
+        @{slc_h1}{
+            font-size: 40px;
+            text-align: center;
+        }
+        @{slc_section}{
+            width: 250px;
+            height: 50px;
+        }
+        @{slc_div}{
+            width: 190px;
+            height: auto;
+            margin-top: 25px;
+        }
+        @{slc_h2}{
+            font-size: 24px;
+        }
+        img{
+            width: 250px;
+            height: 180px;
+            margin-left: 40px;
+        }
+        @{slc_p}{
+            font-size: 16px;
+            height: auto;
+            width: 220px;
+        }
+        }
+
+        @media screen and (min-width: @tamanho360px){
+            @{slc_h1}{
+                font-size: 40px;
+                text-align: center;
+            }
+            @{slc_section}{
+                width: 250px;
+                height: 50px;
+            }
+            @{slc_div}{
+                width: 190px;
+                height: auto;
+                margin-top: 25px;
+            }
+            @{slc_h2}{
+                font-size: 24px;
+            }
+            img{
+                width: 300px;
+                height: 200px;
+                margin-left: 30px;
+            }
+            @{slc_p}{
+                font-size: 16px;
+                height: auto;
+                width: 220px;
+            }
+            }
+
+        @media screen and (min-width: @tamanho400px){
+            @{slc_h1}{
+                font-size: 40px;
+                text-align: center;
+            }
+            @{slc_section}{
+                width: 250px;
+                height: 50px;
+            }
+            @{slc_div}{
+                width: 220px;
+                height: auto;
+                margin-top: 25px;
+            }
+            @{slc_h2}{
+                font-size: 24px;
+            }
+            img{
+                width: 300px;
+                height: 220px;
+                margin-left: 30px;
+            }
+            @{slc_p}{
+                font-size: 17px;
+                height: auto;
+                width: 280px;
+            }
+            }
+
+            @media screen and (min-width: @tamanho540px){
+                @{slc_h1}{
+                    font-size: 40px;
+                    text-align: center;
+                }
+                @{slc_section}{
+                    width: 250px;
+                    height: 50px;
+                }
+                @{slc_div}{
+                    width: 240px;
+                    height: auto;
+                    margin-top: 25px;
+                }
+                @{slc_h2}{
+                    font-size: 24px;
+                }
+                img{
+                    width: 400px;
+                    height: 260px;
+                    margin-left: 60px;
+                }
+                @{slc_p}{
+                    font-size: 18px;
+                    height: auto;
+                    width: 300px;
+                }
+                }
+
+                @media screen and (min-width: @tamanho600px){
+                    @{slc_h1}{
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                    @{slc_section}{
+                        width: 250px;
+                        height: 50px;
+                    }
+                    @{slc_div}{
+                        width: 240px;
+                        height: auto;
+                        margin-top: 25px;
+                    }
+                    @{slc_h2}{
+                        font-size: 24px;
+                    }
+                    img{
+                        width: 500px;
+                        height: 360px;
+                        margin-left: 60px;
+                    }
+                    @{slc_p}{
+                        font-size: 18px;
+                        height: auto;
+                        width: 350px;
+                    }
+                    }
+
+                    @media screen and (min-width: @tamanho800px){
+                        @{slc_h1}{
+                            font-size: 40px;
+                            text-align: center;
+                        }
+                        @{slc_section}{
+                            width: 250px;
+                            height: 50px;
+                        }
+                        @{slc_div}{
+                            width: 260px;
+                            height: auto;
+                            margin-top: 25px;
+                        }
+                        @{slc_h2}{
+                            font-size: 27px;
+                        }
+                        img{
+                            width: 600px;
+                            height: 460px;
+                            margin-left: 60px;
+                        }
+                        @{slc_p}{
+                            font-size: 18px;
+                            height: auto;
+                            width: 350px;
+                        }
+                        }
+
+                        @media screen and (min-width: @tamanho1000px){
+                            @{slc_h1}{
+                                font-size: 40px;
+                                text-align: center;
+                            }
+                            @{slc_section}{
+                                width: 250px;
+                                height: 50px;
+                            }
+                            @{slc_div}{
+                                width: 260px;
+                                height: auto;
+                                margin-top: 25px;
+                            }
+                            @{slc_h2}{
+                                font-size: 27px;
+                            }
+                            img{
+                                width: 800px;
+                                height: 460px;
+                                margin-left: 60px;
+                            }
+                            @{slc_p}{
+                                font-size: 18px;
+                                height: auto;
+                                width: 350px;
+                            }
+                            }
+
+                            @media screen and (min-width: @tamanho1400px){
+                                @{slc_h1}{
+                                    font-size: 40px;
+                                    text-align: center;
+                                }
+                                @{slc_section}{
+                                    width: 250px;
+                                    height: 50px;
+                                }
+                                @{slc_div}{
+                                    width: 260px;
+                                    height: auto;
+                                    margin-top: 25px;
+                                }
+                                @{slc_h2}{
+                                    font-size: 27px;
+                                }
+                                img{
+                                    width: 800px;
+                                    height: 460px;
+                                    margin-left: 300px;
+                                }
+                                @{slc_p}{
+                                    font-size: 18px;
+                                    height: auto;
+                                    width: 350px;
+                                }
+                                }
+                                @media screen and (min-width: @tamanho1600px){
+                                    @{slc_h1}{
+                                        font-size: 40px;
+                                        text-align: center;
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        color: white;
+                                        text-shadow: 2px 2px 2px gray;
+                                        font-size: 100px;
+                                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                    }
+                                    @{slc_section}{
+                                        width: 500px;
+                                        height: 110px;
+                                        background-color: @var_cor_padrao;
+                                        padding: 5px;
+                                        margin: auto;
+                                        border-radius: 0px 0px 20px 20px;
+                                    }
+                                    @{slc_div}{
+                                        margin: auto;
+                                        width: 320px;
+                                        height: auto;
+                                        background-color: @var_cor_titulo;
+                                        text-align: center;
+                                        border-radius: 10px;
+                                        margin-top: 100px;
+                                    }
+                                    @{slc_h2}{
+                                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                        color: white;
+                                        text-shadow: 3px 3px 3px rgb(57, 56, 56);
+                                        font-size: 30px;
+                                    }
+                                    img{
+                                        width: 800px;
+                                        height: 500px;
+                                        margin-left: 400px;
+                                        box-shadow: 5px 5px 2px 5px rgba(8, 8, 8, 0.221);
+                                    }
+                                    @{slc_p}{
+                                        text-align: center;
+                                        width: 600px;
+                                        margin: auto;
+                                        margin-top: 20px;
+                                        margin-bottom: 20px;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                        font-size: 17px;
+                                        padding: 5px;
+                                        border-radius: 4px;
+                                        background-color: @var_cor_padrao;
+                                        margin-bottom: 80px;
+                                    }
+                                    }
+    
